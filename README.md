@@ -1,6 +1,6 @@
-# Shoe Ground Fix v2.2.0
+# Shoe Ground Fix v2.2.1
 
-Project Zomboid 42.21 模组，为 Frockin Splendor! Vol.3 / Vol.5 的 16 个鞋类 `clothingItem` 类型应用垂直抬升着色器，修复可变身形环境下鞋底陷地。
+Project Zomboid B42 模组，为 Frockin Splendor! Vol.3 / Vol.5 的 16 个鞋类 `clothingItem` 类型应用垂直抬升着色器，修复可变身形环境下鞋底陷地。本次控制台检查使用 42.22.2（revision `3d39148846`）。
 
 ## 当前内容
 
@@ -23,10 +23,10 @@ Project Zomboid 42.21 模组，为 Frockin Splendor! Vol.3 / Vol.5 的 16 个鞋
 
 仓库包含可加载的着色器及 XML 覆盖文件；XML 来源于 Frockin Splendor! Vol.3 / Vol.5，着色器基于游戏 42.21 的基础着色器。将仓库内容放入 `Zomboid/mods/ShoeGroundFix/` 并启用本模组。
 
-模组加载顺序应排在 Frockin Splendor! Vol.3 / Vol.5 之后，使同名 XML 覆盖生效。
+模组加载顺序应排在 Frockin Splendor! Vol.3 / Vol.5 之后，使同名 XML 覆盖生效。2.2.1 在两份 `mod.info` 中以 `loadModAfter` 声明这两个来源 ID；它不自动安装来源模组，来源模组本身所需的 Frockin Backstage 仍需安装。
 
 ## 数量与历史证据
 
-当前 v2.2.0 的口径是 **16 个 clothingItem 类型、16 个 XML、2 个着色器变体、6 个着色器文件、0 个网格 FBX 覆盖**。旧的“12 个 XML / 17 个网格”来自此前静态网格抬升版本，不能代表当前 v2.2.0 输出。
+当前 v2.2.1 的口径是 **16 个 clothingItem 类型、16 个 XML、2 个着色器变体、6 个着色器文件、0 个网格 FBX 覆盖**。2.2.1 未修改 XML 或 shader 内容；旧的“12 个 XML / 17 个网格”来自此前静态网格抬升版本，不能代表当前输出。
 
-静态验证确认 16 份 XML 的语法与来源差异、两个着色器变体的偏移量、游戏基础着色器保持情况和版本字段。**着色器在游戏内的实际显示效果尚未验证**；需在真实客户端确认鞋底高度、着地表现和模型是否正常渲染。
+静态验证确认 16 份 XML 的语法与来源差异、两个着色器变体的偏移量、与当前游戏基础 shader 的差异和版本字段。当前游戏 XML 解析器读取全部 16 份覆盖并识别 shader 字段，隔离服务端读取了两个加载顺序 ID。**着色器在游戏内的实际显示效果尚未验证**；需在真实客户端确认鞋底高度、着地表现和模型是否正常渲染。

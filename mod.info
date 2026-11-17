@@ -4,5 +4,6 @@ description=Raises 16 Frockin footwear types: 15 by 30 mm and KIU_THBoots by 40 
 author=myPZmods
 versionMin=42.21
 versionMax=42.99
-modversion=2.2.0
+modversion=2.2.1
+loadModAfter=GanydeBielovzki's Frockin Splendor! Vol.3,GanydeBielovzki's Frockin Splendor! Vol.5
 zomboidversion=42

@@ -1,0 +1,8 @@
+name=Shoe Ground Fix (Frockin footwear, 30/40 mm)
+id=ShoeGroundFix
+description=Raises 16 Frockin footwear types: 15 by 30 mm and KIU_THBoots by 40 mm. Uses shader and clothing XML overrides.
+author=myPZmods
+versionMin=42.21
+versionMax=42.99
+modversion=2.2.0
+zomboidversion=42
